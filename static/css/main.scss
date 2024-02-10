@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Ubuntu Mono', sans-serif;
+}
+
+body{
+    background-color: #111;
+}
+
+main {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+    padding: 92px;
+    border-radius: 10px;
+
+    .heading{
+        font-size: 64px;
+        color: #fff;
+        font-weight: bold;
+        margin-bottom: 48px;
+        text-align: center;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        input, button{
+            padding: 15px 20px;
+            font-size: 24px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+
+        input{
+            background-color: #333;
+            color: #aaa;
+        }
+
+        button{
+            font-weight: bold;
+            cursor: pointer;
+            transition: .3s transform;
+        }
+
+        button:hover{
+            transform: scale(1.025);
+        }
+    }
+
+    div{
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        p{
+            color: #ddd;
+        }
+
+        a{
+            color: lightskyblue;
+            padding: 15px 20px;
+            background-color: #222;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    main{
+        padding: 0;
+
+        .heading{
+            font-size: 48px;
+        }
+
+        input, button, div{
+            font-size: 16px !important;
+        }
+    }
+}
