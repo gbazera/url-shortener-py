@@ -1,1 +1,2 @@
-simple url shortener app built using flask
+## URL Shortener
+Simple url shortener app built in Python using Flask.
